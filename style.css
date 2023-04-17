@@ -14,19 +14,7 @@ body {
     margin-top:-300px;
 }
 
-.picture {
 
-
-  position:absolute;
-  width: 512px;
-  height: 384px;
-  text-align: center;
-
-  margin-left:40px;
-  margin-top:160px;
-  border-radius: 3%;
-
-}
 
 .h1 {
 
@@ -52,4 +40,49 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+div
+{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width:30%;
+}
+.one
+{
+    background-color:limegreen;    
+    float: left;  
+    
+}
+
+.picture {
+
+
+  position:absolute;
+  width: 512px;
+  height: 384px;
+  text-align: center;
+
+  margin-right: -200px;
+  margin-top:160px;
+  border-radius: 3%;
+
+}
+
+
+.two
+{
+    background-color:orange;
+    float: left;
+}
+.three
+{
+    background-color: hotpink;
+    float: left;
 }
