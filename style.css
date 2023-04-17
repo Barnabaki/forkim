@@ -22,7 +22,7 @@ body {
   height: 384px;
   text-align: center;
 
-  margin-left:100px;/* half width*/
+  margin-left:-1340px;/* half width*/
   margin-top:160px;/* half height*/
   border-radius: 3%;
 
@@ -38,4 +38,18 @@ body {
   margin-top:40px;/* half height*/
   color:rgb(235, 140, 150);
 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

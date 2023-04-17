@@ -4,18 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barney and Kim's page</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
+    <div id="bubble-container"></div>
+    <script>
+      //Bubble Script by Lisa (issa@lissaexplains.com, http://lissaexplains.com)
+      //Based on code by Altan d.o.o. (snow@altan.hr)
+      //For full source code and installation instructions to this script, visit http://www.dynamicdrive.com
+  
+      var no = 15; // image number or falling rate
+      var speed = 2; // the lower the number the faster the image moves
+      var snow = new Array();
+      snow[0] = "bubble.gif";
+      snow[1] = "bubble.gif";
+      snow[2] = "bubble.gif";
+  
+      var doc_width = window.innerWidth;
+      var doc_height = window.innerHeight;
+  
+      var dx = new Array();
+      var xp = new Array();
+      var yp = new Array();
+      var am = new Array();
+      var stx = new Array();
+      var sty = new Array();
+  
+      for (var i = 0; i < no; i++) {
+        dx[i] = 0;                        // set coordinate variables
+        xp[i] = Math.random()*(doc_width-50);  // set position variables
+        yp[i] = Math.random()*doc_height;
+        am[i] = Math.random()*20;         // set amplitude variables
+        stx[i] = 0.02 + Math.random()/10; // set step variables
+        sty[i] = 0.7 + Math.random();     // set step variables
+  
+        var bubble = document.createElement('div');
+        bubble.id = "dot" + i;
+        bubble.style.position = 'absolute';
+        bubble.style.zIndex = i;
+        bubble.style.visibility = 'visible';
+        bubble.style.top = '15px';
+        bubble.style.left = '15px';
+        bubble.style.width = '1px';
+  
+        var bubbleImage = document.createElement('img');
+        bubbleImage.src = snow[i % snow.length];
+        bubbleImage.style.border = '0';
+  
+        bubble.appendChild(bubbleImage);
+        document.getElementById('bubble-container').appendChild(bubble);
+      }
+  
+      function animate() {
+        for (var i = 0; i < no; i++) {  // iterate for every dot
+          yp[i] -= sty[i];
+          if (yp[i] < -50) {
+            xp[i] = Math.random()*(doc_width-am[i]-30);
+            yp[i] = doc_height;
+            stx[i] = 0.02 + Math.random()/10;
+            sty[i] = 0.7 + Math.random();
+            doc_width = window.innerWidth;
+            doc_height = window.innerHeight;
+          }
+          dx[i] += stx[i];
+          document.getElementById("dot" + i).style.top = yp[i] + window.pageYOffset + "px";
+          document.getElementById("dot" + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + "px";
+        }
+        setTimeout(animate, speed);
+      }
+  
+      animate();
+    </script>
         
         <h1 class="h1">Hi, how are you:))</h1>
+        <marquee>
+            Wawawoowa ~ Borat 
+            &emsp;
+            Very nice ~ Borat 
+            &emsp;
+            Happy times ~ Borat
+            &emsp;
+            High five ~ Borat 
+            &emsp;
+            I’m not in love I’m in pain ~ Barnabitch 
+            &emsp;
+            “We used to be friends. What happened?” ~ Barnaba while having a massive stroke 
+            &emsp;
+            “So… I’m a doctor” *yeet* ~ Barnaba 
+            &emsp;
+            “Selfish and vain” ~ Kim
+            &emsp;
+            I just want to hear im weaker, not weak ~ probably Barney
+            &emsp;
+            I HAVE AUTISM ~ Barney
+            &emsp;
+            There was a turtleneck squad ~ Barney
+            &emsp;
+            I’m so stupid - Kim
+            &emsp;
+            Ice on my wrist eyyy ~ Barney
+            &emsp;
+            6th dimensional porn ~ Barney
+            &emsp;
+
+
+
+
+
+
+        </marquee>
+
+
+        
+
+        
         <dev class="content">
-    
+        
 
 
                 <script>
+
                 // To set two dates to two variables
                 var date1 = new Date("09/01/2022");
                 var present_date = new Date();
@@ -61,8 +171,10 @@
                 </script>
 
         </dev>
+        
+    <img class="picture" src="picofus.jpg">
 
-<img class="picture" src="picofus.jpg">
+
 
 
 
