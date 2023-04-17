@@ -1,0 +1,41 @@
+body {
+  background-color: powderblue;
+  font-family: Papyrus, fantasy;
+}
+
+.content {
+    width: 200px;
+    height: 600px;
+    text-align: center;
+    position:absolute;
+    top:70%;
+    left:50%;
+    margin-left:-100px;/* half width*/
+    margin-top:-300px;/* half height*/
+}
+
+.picture {
+
+
+  position:absolute;
+  width: 512px;
+  height: 384px;
+  text-align: center;
+
+  margin-left:100px;/* half width*/
+  margin-top:160px;/* half height*/
+  border-radius: 3%;
+
+}
+
+.h1 {
+
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  position:absolute;
+  margin-left:29%;/* half width*/
+  margin-top:40px;/* half height*/
+  color:rgb(235, 140, 150);
+
+}

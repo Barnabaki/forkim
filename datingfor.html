@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+        
+        <h1 class="h1">Hi, how are you:))</h1>
+        <dev class="content">
+    
+
+
+                <script>
+                // To set two dates to two variables
+                var date1 = new Date("09/01/2022");
+                var present_date = new Date();
+                
+                // To calculate the time difference of two dates
+                var Difference_In_Time = present_date.getTime() - date1.getTime();
+                
+                // To calculate the no. of days between two dates
+                var Result = Math.round(Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24));
+                
+                //To display the final no. of days (result)
+                document.write("Days dating:  <br>"
+                        + Result);
+
+
+                // One day Time in ms (milliseconds)
+                var one_day = 1000 * 60 * 60 * 24
+                
+                // To set present_dates to two variables
+                var present_date = new Date();
+                
+                // 0-11 is Month in JavaScript
+                var anniversary_day = new Date(present_date.getFullYear(), 9, 1)
+                
+                if (present_date.getMonth() == 9 && present_date.getdate() > 1)
+                anniversary_day.setFullYear(anniversary_day.getFullYear() + 1)
+                
+                // To Calculate the result in milliseconds and then converting into days
+                var ResultTill = Math.round(anniversary_day.getTime() - present_date.getTime()) / (one_day);
+                
+                // To remove the decimals from the (Result) resulting days value
+                var Final_Result = ResultTill.toFixed(0);
+                
+                //To display the final_result value
+                document.write("<br> Days till anniversary:  <br>" 
+                        + Final_Result);
+
+                var ResultPercent = Math.round(((Difference_In_Time / (1000 * 3600 * 24)) / 365)*100)
+
+                document.write('<br> Percent of year dated (rounded up):  <br>'
+                        + ResultPercent + "%");
+                
+                </script>
+
+        </dev>
+
+<img class="picture" src="picofus.jpg">
+
+
+
+
+
+
+
+</body>
+</html>
